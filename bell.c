@@ -91,3 +91,4 @@ void* thowinffunc(void* voidArgs){
 		}
 	}
 }
+//	cp espins.tar.bz2 /home2/samba/karwowskij/unix
