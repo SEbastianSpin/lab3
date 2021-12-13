@@ -28,7 +28,7 @@ typedef struct argsThread{ // STRUCTS FOR ARGS
 	//pthread_mutex_t *mxBins;
 } argsThread_t;
 
-void ReadArguments(int argc, char** argv, int *param1 /*, INT PARAM2 */);
+void ReadArguments(int argc, char** argv, int *param1 /*, int* param2 */);
 
 void* thread_func(void* args);
 void* signal_handling(void*);
@@ -99,7 +99,7 @@ ReadArguments(argc, argv, &param1);
 exit(EXIT_SUCCESS);
 }
 
-void ReadArguments(int argc, char** argv, int *param1 /*, int param2 */){
+void ReadArguments(int argc, char** argv, int *param1 /*, int *param2 */){
 	*param1 = DEFAULT_FORPARAM1;
 	//*param2 = DEFAULT_FORPARAM2;
 	if (argc >= 2) {
